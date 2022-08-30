@@ -1,5 +1,5 @@
 const notes = require('express').Router();
-const { read, append } = require('../helper/utils');
+const { read, append } = require('../helpers/utils');
 
 notes.get('/', (req, res) => {
     console.log(req)

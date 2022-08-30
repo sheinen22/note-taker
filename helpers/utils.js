@@ -21,4 +21,4 @@ const append = (cont, file) => {
     })
 }
 
-module.exports = { read, write, append}
+module.exports = { read, write, append }
