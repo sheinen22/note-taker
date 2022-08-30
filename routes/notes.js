@@ -26,7 +26,7 @@ notes.get('/', (req, res) => {
 
 notes.delete(`/:id`, (req, res) => {
     delete('./db/db.js.{id}')
-    res.json(`Deleted`)
+    res.json(`DELETE route`)
   });
 
   module.exports = notes;
