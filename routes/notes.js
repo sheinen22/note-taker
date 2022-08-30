@@ -1,5 +1,6 @@
 const notes = require('express').Router();
 const { read, append } = require('../helpers/utils');
+const uuid = require('../helpers/uuid');
 
 notes.get('/', (req, res) => {
     console.log(req)
@@ -15,6 +16,7 @@ notes.get('/', (req, res) => {
       const newNote = {
         title,
         text,
+        id: uuid()
       };
       
     append(newNote, './db/db.json');
@@ -24,9 +26,5 @@ notes.get('/', (req, res) => {
   }
 });
 
-notes.delete(`/:id`, (req, res) => {
-    delete('./db/db.js.{id}')
-    res.json(`DELETE route`)
-  });
 
   module.exports = notes;
