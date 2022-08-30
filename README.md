@@ -5,4 +5,4 @@ This is an app designed for organizing daily notes.  You can select each note to
 Live URL:
 https://note-taker-stephen2.herokuapp.com/
 
-[!alt text](/note-taker%20ss.png "screenshot")
+![Alt text](/note-taker%20ss.png "screenshot")
